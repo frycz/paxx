@@ -6,6 +6,8 @@
 
 **Domain-oriented FastAPI scaffolding with zero lock-in.**
 
+See [full documentation](https://frycz.github.io/paxx/).
+
 paxx generates production-ready Python code using FastAPI, SQLAlchemy async, Pydantic v2, and Alembic. No wrapper abstractions—just clean, readable code you own and can modify freely.
 
 ## Features
