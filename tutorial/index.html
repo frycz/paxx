@@ -978,7 +978,7 @@
 <li>Development environment running (<code>docker compose up</code> or local setup)</li>
 </ul>
 <h2 id="step-1-create-the-feature">Step 1: Create the Feature<a class="headerlink" href="#step-1-create-the-feature" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>uv<span class="w"> </span>run<span class="w"> </span>paxx<span class="w"> </span>feature<span class="w"> </span>create<span class="w"> </span>products<span class="w"> </span>--description<span class="w"> </span><span class="s2">&quot;Product catalog management&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>paxx<span class="w"> </span>feature<span class="w"> </span>create<span class="w"> </span>products<span class="w"> </span>--description<span class="w"> </span><span class="s2">&quot;Product catalog management&quot;</span>
 </code></pre></div>
 <p>This creates <code>features/products/</code> with all the necessary files.</p>
 <h2 id="step-2-define-the-model">Step 2: Define the Model<a class="headerlink" href="#step-2-define-the-model" title="Permanent link">&para;</a></h2>
@@ -1211,14 +1211,14 @@
 </code></pre></div>
 <h2 id="step-8-create-and-apply-migrations">Step 8: Create and Apply Migrations<a class="headerlink" href="#step-8-create-and-apply-migrations" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Create the migration</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>uv<span class="w"> </span>run<span class="w"> </span>paxx<span class="w"> </span>db<span class="w"> </span>migrate<span class="w"> </span><span class="s2">&quot;add products table&quot;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>paxx<span class="w"> </span>db<span class="w"> </span>migrate<span class="w"> </span><span class="s2">&quot;add products table&quot;</span>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
 <a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Apply it</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>uv<span class="w"> </span>run<span class="w"> </span>paxx<span class="w"> </span>db<span class="w"> </span>upgrade
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>paxx<span class="w"> </span>db<span class="w"> </span>upgrade
 </code></pre></div>
 <h2 id="step-9-test-your-api">Step 9: Test Your API<a class="headerlink" href="#step-9-test-your-api" title="Permanent link">&para;</a></h2>
 <p>Start the server:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>uv<span class="w"> </span>run<span class="w"> </span>paxx<span class="w"> </span>start
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>paxx<span class="w"> </span>start
 </code></pre></div>
 <p>Visit <a href="http://127.0.0.1:8000/docs">http://127.0.0.1:8000/docs</a> to test your endpoints:</p>
 <ol>
