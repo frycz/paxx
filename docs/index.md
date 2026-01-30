@@ -4,17 +4,15 @@ A domain-oriented FastAPI project scaffolding CLI.
 
 paxx generates production-ready code using well-known libraries (FastAPI, SQLAlchemy async, Pydantic v2, Alembic) directly. No wrapper abstractions, no framework lock-in - just a solid starting point for domain-driven FastAPI applications.
 
-## Why paxx?
-
-Get a well-structured, object-oriented and composable app skeleton that you can build on. Skip the boilerplate setup you've done a hundred times
+Get a well-structured and composable app skeleton that you can build on. Skip the boilerplate setup you've done a hundred times.
 
 ## Philosophy
 
-- **No magic** - Generated code uses FastAPI, SQLAlchemy, and Pydantic directly
-- **No lock-in** - After bootstrapping, your project has zero dependency on paxx
-- **Domain-driven** - Features organized by business capability, not technical layer
-- **Production-ready** - Includes Docker, migrations, logging, and deployment configs
-- **Your code, your rules** - The generated structure is a starting point, not a constraint. Reshape it to fit your needs
+- **No magic** — Generated code uses FastAPI, SQLAlchemy, and Pydantic directly
+- **No lock-in** — After bootstrapping, your project has zero dependency on paxx
+- **Domain-driven** — Features organized by business capability, not technical layer
+- **Production-ready** — Includes Docker, migrations, logging, and deployment configs
+- **Your code, your rules** — The generated structure is a starting point, not a constraint
 
 ## Quick Start
 

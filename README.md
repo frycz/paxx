@@ -10,13 +10,23 @@ See [full documentation](https://frycz.github.io/paxx/).
 
 paxx generates production-ready Python code using FastAPI, SQLAlchemy async, Pydantic v2, and Alembic. No wrapper abstractions—just clean, readable code you own and can modify freely.
 
+## Philosophy
+
+paxx is a **scaffolding tool**, not a framework:
+
+- **No magic** — Generated code uses FastAPI, SQLAlchemy, and Pydantic directly
+- **No lock-in** — After bootstrapping, your project has zero dependency on paxx
+- **Domain-driven** — Features organized by business capability, not technical layer
+- **Production-ready** — Includes Docker, migrations, logging, and deployment configs
+- **Your code, your rules** — The generated structure is a starting point, not a constraint
+
 ## Features
 
 - **Zero lock-in** — Generated projects have no dependency on paxx after scaffolding
 - **Domain-driven** — Features organized by business capability, not technical layer
 - **Async-first** — Built on SQLAlchemy async and FastAPI's async capabilities
 - **Production-ready** — Includes Docker, migrations, structured logging, and deployment configs
-- **Batteries included** — Add Redis caching, background tasks, object storage, WebSockets, and more
+- **Easy to extend** — Add Redis caching, background tasks, object storage, WebSockets, and more
 
 ## Installation
 
@@ -219,16 +229,6 @@ myproject/
 │
 └── deploy/                  # Deployment configs (via paxx deploy)
 ```
-
-## Philosophy
-
-paxx is a **scaffolding tool**, not a framework:
-
-- **No magic** — Generated code uses FastAPI, SQLAlchemy, and Pydantic directly
-- **No lock-in** — After bootstrapping, your project has zero dependency on paxx
-- **Domain-driven** — Features organized by business capability, not technical layer
-- **Production-ready** — Includes Docker, migrations, logging, and deployment configs
-- **Your code, your rules** — The generated structure is a starting point, not a constraint
 
 ## Requirements
 
