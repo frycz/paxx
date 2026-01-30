@@ -10,7 +10,7 @@ This tutorial walks through creating a complete CRUD feature for managing produc
 ## Step 1: Create the Feature
 
 ```bash
-uv run paxx feature create products --description "Product catalog management"
+paxx feature create products --description "Product catalog management"
 ```
 
 This creates `features/products/` with all the necessary files.
@@ -271,10 +271,10 @@ def create_app() -> FastAPI:
 
 ```bash
 # Create the migration
-uv run paxx db migrate "add products table"
+paxx db migrate "add products table"
 
 # Apply it
-uv run paxx db upgrade
+paxx db upgrade
 ```
 
 ## Step 9: Test Your API
@@ -282,7 +282,7 @@ uv run paxx db upgrade
 Start the server:
 
 ```bash
-uv run paxx start
+paxx start
 ```
 
 Visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to test your endpoints:

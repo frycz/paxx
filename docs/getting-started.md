@@ -59,7 +59,7 @@ Your API is now running at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 Features are domain modules that contain your business logic. Create one with:
 
 ```bash
-uv run paxx feature create users
+paxx feature create users
 ```
 
 This generates:
@@ -80,10 +80,10 @@ After defining your models, create and apply migrations:
 
 ```bash
 # Create a migration
-uv run paxx db migrate "add users table"
+paxx db migrate "add users table"
 
 # Apply the migration
-uv run paxx db upgrade
+paxx db upgrade
 ```
 
 ## Add Infrastructure (Optional)
@@ -91,10 +91,10 @@ uv run paxx db upgrade
 Add infrastructure components as needed:
 
 ```bash
-uv run paxx infra list           # List all available components
+paxx infra list           # List all available components
 
-uv run paxx infra add redis      # Redis caching
-uv run paxx infra add storage    # Object storage (S3/local)
+paxx infra add redis      # Redis caching
+paxx infra add storage    # Object storage (S3/local)
 ```
 
 ## Add extensions (Optional)
@@ -103,10 +103,10 @@ Add extensions:
 
 ```bash
 # Extensions (enhances existing infrastructure)
-uv run paxx ext list             # List all available extensions
+paxx ext list             # List all available extensions
 
-uv run paxx ext add arq          # Background tasks (requires redis)
-uv run paxx ext add websocket    # WebSocket support
+paxx ext add arq          # Background tasks (requires redis)
+paxx ext add websocket    # WebSocket support
 ```
 
 ## Project Structure Overview

@@ -376,7 +376,7 @@ Follow the [Tutorial](tutorial.md) to build a complete feature.
 If you already know how to build features, you can skip the tutorial and add the pre-built example:
 
 ```bash
-uv run paxx feature add example_products
+paxx feature add example_products
 ```
 
 This adds a complete products feature with:

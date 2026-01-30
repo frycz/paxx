@@ -55,7 +55,7 @@ def _list_features() -> None:
         table.add_row(feature, description)
 
     console.print(table)
-    console.print("\nUsage: [bold]uv run paxx feature add <feature>[/bold]")
+    console.print("\nUsage: [bold]paxx feature add <feature>[/bold]")
 
 
 def _get_feature_config(source_dir: Path) -> dict[str, str | list[str]]:
@@ -351,8 +351,8 @@ def add(
         console.print(f"  1. Review the code in features/{feature}/")
         console.print("  2. Customize as needed for your project")
         console.print("  3. Create and apply migrations:")
-        console.print(f'     uv run paxx db migrate "add {feature}"')
-        console.print("     uv run paxx db upgrade")
+        console.print(f'     paxx db migrate "add {feature}"')
+        console.print("     paxx db upgrade")
 
     except Exception as e:
         console.print(f"[bright_red]Error adding feature: {e}[/bright_red]")
@@ -444,8 +444,8 @@ def create(
         console.print(f"  4. Add routes in features/{feature_name}/routes.py")
         console.print()
         console.print("Then create and apply migrations:")
-        console.print(f'  uv run paxx db migrate "add {feature_name} models"')
-        console.print("  uv run paxx db upgrade")
+        console.print(f'  paxx db migrate "add {feature_name} models"')
+        console.print("  paxx db upgrade")
 
     except Exception as e:
         console.print(f"[bright_red]Error creating feature: {e}[/bright_red]")

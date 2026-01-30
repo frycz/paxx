@@ -253,7 +253,7 @@ def create_project(
             console.print("  2. docker compose up")
         console.print()
         console.print("To create a new feature:")
-        console.print("  uv run paxx feature create <feature_name>")
+        console.print("  paxx feature create <feature_name>")
 
     except Exception as e:
         console.print(f"[bright_red]Error creating project: {e}[/bright_red]")

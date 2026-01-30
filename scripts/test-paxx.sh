@@ -38,7 +38,7 @@ echo "=== Bootstrapping test project ==="
 mkdir -p tmp
 cd tmp
 rm -rf test-project
-uv run paxx bootstrap test-project
+paxx bootstrap test-project
 
 cd test-project
 uv sync --all-extras

@@ -109,7 +109,7 @@ def migrate(
         typer.echo()
         typer.echo("Next step:")
         typer.echo("  Apply the migration to your database:")
-        typer.echo("    uv run paxx db upgrade")
+        typer.echo("    paxx db upgrade")
 
 
 @app.command("upgrade")

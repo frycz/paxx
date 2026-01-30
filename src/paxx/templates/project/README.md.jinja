@@ -16,20 +16,20 @@ docker compose up
 
 ```bash
 # Create a new migration
-uv run paxx db migrate "description"
+paxx db migrate "description"
 
 # Apply migrations
-uv run paxx db upgrade
+paxx db upgrade
 
 # Revert last migration
-uv run paxx db downgrade
+paxx db downgrade
 ```
 
 ### Creating Features
 
 ```bash
 # Create a new domain feature
-uv run paxx feature create users
+paxx feature create users
 ```
 
 ## Project Structure

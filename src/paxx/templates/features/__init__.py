@@ -10,8 +10,8 @@ Available features:
 - permissions: Role-based access control (coming soon)
 
 Usage:
-    uv run paxx feature add auth
-    uv run paxx feature add example_products
+    paxx feature add auth
+    paxx feature add example_products
 """
 
 from pathlib import Path
